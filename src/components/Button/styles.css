@@ -1,0 +1,23 @@
+#button-link{
+    background: var(--primary);
+    color: #fff;
+    border-radius: 0.62402vw;
+    min-width: 14.04056vw;
+    min-height: 4.05616vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.32605vw;
+    
+    margin-bottom: 2vw;
+    transition: 0.2s;
+}
+
+#button-link:hover{
+    background: var(--primary-dark);
+}

@@ -2,6 +2,11 @@ import React from 'react';
 
 import Logo from '../../assets/logo.svg';
 import imageBanner from '../../assets/banner.svg';
+import imageWay from '../../assets/way.svg';
+import iconMore from '../../assets/moreIcon.svg';
+import iconCircle from '../../assets/circleIcon.svg';
+
+import ButtonLink from '../../components/Button';
 
 
 import './styles.css';
@@ -34,6 +39,10 @@ const Landing = () => {
                 <div id="containerBanner">
                     <div className="content">
                         <div className="leftBox">
+                            <img src={iconMore} className="icon" alt="icon more"/>
+                            <img src={iconCircle} className="icon" alt="icon circle"/>
+                            <img src={iconCircle} className="icon" alt="icon circle"/>
+
                             <h1>Explore and<br />Travel</h1>
 
                             <h3>Holiday finder</h3>
@@ -53,7 +62,7 @@ const Landing = () => {
                                 </select>
                             </div>
 
-                            <a href="#explore" className="button">Explore</a>
+                            <ButtonLink link="#explore" size={1.32605} text="Explore" />
                         </div>
 
                         <div className="rightBox">
@@ -62,7 +71,26 @@ const Landing = () => {
                     </div>
                 </div>
             </section>
-            
+
+            <section id="way">
+                <div className="content">
+                    <div className="imageWay">
+                        <img src={imageWay} alt="Imagem da section way: Tour and Travel"/>
+
+                        <img src={iconMore} className="icon" alt="icon more"/>
+                    </div>
+
+                    <div className="textWay">
+                        <h2>A new way to explore the world</h2>
+
+                        <p>
+                        For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way
+                        </p>
+
+                        <ButtonLink link="#learn" size={1.24805} text="Learn more" />
+                    </div>
+                </div>
+            </section>
         </>
     );
 };

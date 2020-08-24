@@ -1,6 +1,6 @@
 :root{
     --primary: #FB8F1D;
-    --primary-dark: #f88000;
+    --primary-dark: #f07c00;
     --color-text: #202336;
     --color-text-light: #7D7987;
     --color-text-select: #4A4C53;
@@ -129,12 +129,35 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    position: relative;
 }
 
 #containerBanner .content .rightBox img{
     width: 100%;
 }
 
+#containerBanner .content .leftBox img.icon{
+    position: absolute;
+    width: auto;
+}
+
+#containerBanner .content .leftBox img.icon:nth-child(1){
+    top: 1vw;
+    right: 6vw;
+    width: 1.56006vw;
+}
+
+#containerBanner .content .leftBox img.icon:nth-child(2){
+    left: -6.63027vw;
+    width: 1.95008vw;
+}
+
+#containerBanner .content .leftBox img.icon:nth-child(3){
+    right: 0;
+    bottom: -0.31201vw;
+    width: 1.48206vw;
+}
 
 #containerBanner .content .leftBox h1{
     font-size: 4.99220vw;
@@ -189,23 +212,63 @@
     line-height: 2.49610vw;
 }
 
-#containerBanner .content .leftBox .button{
-    background: var(--primary);
-    color: #fff;
-    border-radius: 0.62402vw;
-    width: 14.04056vw;
-    height: 4.05616vw;
-
+#way{
+    min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-
-    font: 600 1.32605vw 'Inter';
-    margin-bottom: 2vw;
 }
 
-#containerBanner .content .leftBox .button:hover{
-    background: var(--primary-dark);
+#way .content{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+#way .content > div{
+    width: 50%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#way .content .imageWay img{
+    width: 100%;
+}
+
+#way .content .imageWay img.icon{
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: -2.02808vw;
+    transform: rotate(7.49deg)
+}
+
+
+#way .content .textWay{
+    padding-left: 7.95632vw;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+#way .content .textWay h2{
+    font-size: 2.80811vw;
+    line-height: 3.90016vw;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 1.56006vw;
+}
+
+#way .content .textWay p{
+    font: 300 1.32605vw 'Inter', sans-serif;
+    line-height: 2.34009vw;
+    margin-bottom: 2.57410vw;
+
+    color: var(--color-text-light);
+
+}
