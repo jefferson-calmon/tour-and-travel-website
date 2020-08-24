@@ -1,0 +1,211 @@
+:root{
+    --primary: #FB8F1D;
+    --primary-dark: #f88000;
+    --color-text: #202336;
+    --color-text-light: #7D7987;
+    --color-text-select: #4A4C53;
+    --footer: #F9F9FB;
+    --text-footer: #848484;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#topo{
+    position: relative;
+    z-index: 10;
+}
+
+#topo .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2vw;
+}
+
+#topo .content h1 a img{
+    width: 3.19813vw;
+    height: 3.19813vw;
+}
+
+#navigation ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navigation ul li{
+    margin-left: 2.73011vw;
+}
+
+#navigation ul li:first-child{
+    margin-left: 0;
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    color: var(--color-text-light);
+    line-height: 1.48206vw;
+    font: 500 1.24805vw 'Inter', sans-serif;
+    transition: 0.2s;
+}
+
+#navigation ul li a:hover{
+    color: var(--color-text);
+}
+
+#navigation ul li.active a{
+    color: var(--color-text);
+}
+
+#navigation ul li.buttonHeader{
+    border-radius: 0.62402vw;
+}
+
+#navigation ul li.buttonHeader.full{
+    background: var(--primary);
+    margin-left: 1.5vw;
+}
+
+#navigation ul li.buttonHeader.full a{
+    color: #fff;
+}
+
+#navigation ul li.buttonHeader a{
+    color: var(--primary);
+    font-size: 1.17005vw;
+    font-weight: 500;
+    width: 9.75039vw;
+
+    
+    border-radius: 0.62402vw;
+    padding: 0.78003vw 0;
+    border: 0.07800vw solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerBanner{
+    position: absolute;
+    bottom: 0;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    height: 100%;
+    width: 100vw;
+    min-height: 50vh;
+
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+@media (min-height: 1080px){
+    #containerBanner{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#containerBanner .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerBanner .content > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#containerBanner .content .rightBox img{
+    width: 100%;
+}
+
+
+#containerBanner .content .leftBox h1{
+    font-size: 4.99220vw;
+    font-weight: bold;
+    line-height: 6.24025vw;
+    color: var(--color-text);
+    margin-bottom: 3vw;
+}
+
+#containerBanner .content .leftBox h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.71607vw;
+    line-height: 2.10608vw;
+    position: relative;
+    padding-bottom: 1.63807vw;
+    margin-bottom: 2vw;
+}
+
+#containerBanner .content .leftBox h3::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2.49610vw;
+    height: 0.15601vw;
+    background: var(--color-text);
+}
+
+#containerBanner .content .leftBox .gridInputsBanner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.34009vw;
+    /* background: red; */
+    width: 80%;
+    margin-bottom: 3vw;
+}
+
+#containerBanner .content .leftBox .gridInputsBanner select{
+    height: 4.05616vw;
+    border: 0.06240vw solid #AFB0B9;
+    border-radius: 0.46802vw;
+    padding: 0 1.56006vw;
+    font-size: 1.17005vw;
+    line-height: 2.49610vw;
+}
+
+#containerBanner .content .leftBox .gridInputsBanner select option{
+    color: var(--color-text-select);
+    font-size: 1.17005vw;
+    font-family: 'Inter', sans-serif;
+    line-height: 2.49610vw;
+}
+
+#containerBanner .content .leftBox .button{
+    background: var(--primary);
+    color: #fff;
+    border-radius: 0.62402vw;
+    width: 14.04056vw;
+    height: 4.05616vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    font: 600 1.32605vw 'Inter';
+    margin-bottom: 2vw;
+}
+
+#containerBanner .content .leftBox .button:hover{
+    background: var(--primary-dark);
+}
+
