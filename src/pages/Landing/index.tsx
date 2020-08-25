@@ -5,6 +5,8 @@ import imageBanner from '../../assets/banner.svg';
 import imageWay from '../../assets/way.svg';
 import iconMore from '../../assets/moreIcon.svg';
 import iconCircle from '../../assets/circleIcon.svg';
+import iconArrowRight from '../../assets/arrowRight.svg';
+import imageDestination1 from '../../assets/destination1.png';
 
 import ButtonLink from '../../components/Button';
 
@@ -36,7 +38,7 @@ const Landing = () => {
                     </div>
                 </header>
 
-                <div id="containerBanner">
+                <div id="containerBanner"> 
                     <div className="content">
                         <div className="leftBox">
                             <img src={iconMore} className="icon" alt="icon more"/>
@@ -88,6 +90,57 @@ const Landing = () => {
                         </p>
 
                         <ButtonLink link="#learn" size={1.24805} text="Learn more" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="destinations" >
+                <div className="content">
+                    <header>
+                        <h2>Featured destinations</h2>
+
+                        <a href="#all">
+                            View all
+                            <img src={iconArrowRight} alt="Arrow right"/>
+                        </a>
+                    </header>
+
+                    <div className="destinations">
+                        <div className="destination">
+                            <img src={imageDestination1} alt="Raja Ampat"/>
+
+                            <div>
+                                <h3>Raja Ampat</h3>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div className="destination">
+                            <img src={imageDestination1} alt="Raja Ampat"/>
+
+                            <div>
+                                <h3>Raja Ampat</h3>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div className="destination">
+                            <img src={imageDestination1} alt="Raja Ampat"/>
+
+                            <div>
+                                <h3>Raja Ampat</h3>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div className="destination">
+                            <img src={imageDestination1} alt="Raja Ampat"/>
+
+                            <div>
+                                <h3>Raja Ampat</h3>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

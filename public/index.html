@@ -17,9 +17,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Tour and Travel</title>
+
+    <style>
+      #load{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        z-index: 1000;
+      }
+
+      #load div{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        border-right: 4px solid #FB8F1D;
+        animation: animate 1s linear infinite;
+        box-shadow: 0 0 1px #FB8F1D;
+      }
+
+      @keyframes animate{
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="load">
+      <div></div>
+    </div>
     <div id="root"></div>
+
+    <script>
+
+      setTimeout(() => {
+        document.getElementById('load').style.display = 'none';
+      }, 2500);
+
+    </script>
   </body>
 </html>

@@ -150,7 +150,7 @@
 
 #containerBanner .content .leftBox img.icon:nth-child(2){
     left: -6.63027vw;
-    width: 1.95008vw;
+    width: 1.95008vw;   
 }
 
 #containerBanner .content .leftBox img.icon:nth-child(3){
@@ -271,4 +271,113 @@
 
     color: var(--color-text-light);
 
+}
+
+#destinations{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#destinations .content{
+    position: relative;
+}
+
+#destinations .content header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4.40252vw;
+}
+
+#destinations .content header h2{
+    font-size: 2.83019vw;
+    line-height: 3.93082vw;
+}
+
+#destinations .content header a{
+    color: var(--primary);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.33648vw;
+    line-height: 4.71698vw;
+}
+
+#destinations .content header a img {
+    margin-left: 0.86478vw;
+    height: 100%;
+}
+
+#destinations .content div.destinations{
+    /* display: grid;
+    grid-template-columns: 36.71384vw 36.71384vw 36.71384vw 36.71384vw;
+    gap: 2.12264vw;
+    place-items: center;
+    place-content: center; */
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+
+}
+
+#destinations .content .destinations .destination{
+    position: relative;
+    width: 36.71384vw;
+    height: 26.49371vw;
+    margin-left: 2.12264vw;
+    border-radius: 0.78616vw;
+    box-shadow: 0 2px 5px rgb(221, 221, 221);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+#destinations .content .destinations .destination:hover{
+    transform: translateY(-10px);
+}
+
+#destinations .content .destinations .destination:first-child{
+    margin-left: 0;
+}
+
+#destinations .content .destinations .destination img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 0.78616vw;
+}
+
+#destinations .content .destinations .destination div{
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0.47170vw 0px 0px;
+    min-width: 9.43396vw;
+    height: 4.40252vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#destinations .content .destinations .destination div h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.33648vw;
+    line-height: 1.96541vw;
+
+    color: #042521;
+}
+
+#destinations .content .destinations .destination div p{
+    font: 400 16px 'Inter', sans-serif;
+    color: var(--color-text-light);
 }
