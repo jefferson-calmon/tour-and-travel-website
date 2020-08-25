@@ -295,6 +295,7 @@
 #destinations .content header h2{
     font-size: 2.83019vw;
     line-height: 3.93082vw;
+    color: var(--color-text);
 }
 
 #destinations .content header a{
@@ -327,57 +328,105 @@
 
 }
 
-#destinations .content .destinations .destination{
+#destinations .content .icon{
+    position: absolute;
+}
+
+#destinations .content .icon.i1{
+    top: 0;
+    right: 13.12893vw;
+    width: 1.57233vw;
+    height: 1.57233vw;
+}
+#destinations .content .icon.i2{
+    top: calc(75% - 1.57233vw);
+    left: -5.79560vw;
+    transform: rotate(7.49deg);
+}
+#destinations .content .icon.i3{
+    bottom: -4.06604vw;
+    left: calc(50% - 1.56918vw);
+    width: 1.56918vw;
+    height: 1.56918vw;
+}
+
+
+
+#sunny{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 36.71384vw;
-    height: 26.49371vw;
-    margin-left: 2.12264vw;
-    border-radius: 0.78616vw;
-    box-shadow: 0 2px 5px rgb(221, 221, 221);
-    transition: transform 0.2s;
-    cursor: pointer;
 }
 
-#destinations .content .destinations .destination:hover{
-    transform: translateY(-10px);
-}
-
-#destinations .content .destinations .destination:first-child{
-    margin-left: 0;
-}
-
-#destinations .content .destinations .destination img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    border-radius: 0.78616vw;
-}
-
-#destinations .content .destinations .destination div{
-    position: absolute;
-    background: #fff;
-    bottom: 0;
-    left: 0;
-    border-radius: 0px 0.47170vw 0px 0px;
-    min-width: 9.43396vw;
-    height: 4.40252vw;
+#sunny .content{
 
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sunny .content > div{
+    width: 50%;
+    min-height: 50vh;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-#destinations .content .destinations .destination div h3{
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 1.33648vw;
-    line-height: 1.96541vw;
-
-    color: #042521;
+#sunny .content .imageSunny img{
+    width: 100%;
 }
 
-#destinations .content .destinations .destination div p{
-    font: 400 16px 'Inter', sans-serif;
+#sunny .content .textSunny{
+    padding-right: 6.28931vw;
+    align-items: flex-start;
+}
+
+#sunny .content .textSunny h2{
+    color: var(--color-text);
+
+    font-weight: bold;
+    font-size: 2.83019vw;
+    line-height: 3.93082vw;
+
+    margin-bottom: 1.57233vw;
+}
+
+#sunny .content .textSunny p{
+    line-height: 2.35849vw;
+    font: 300 1.33648vw 'Inter', sans-serif;
+
     color: var(--color-text-light);
+
+    margin-bottom: 2.59434vw;
+}
+
+#sunny .icon{
+    position: absolute;
+}
+
+#sunny .icon.i1{
+    top: 9.43396vw;
+    right: 10.14072vw;
+    transform: rotate(9.99deg);
+    width: 1.25786vw;
+    height: 1.25786vw;
+}
+#sunny .icon.i2{
+    left: 22.40566vw;
+    top: 10.43396vw;
+    width: 1.25786vw;
+    height: 1.25786vw;
+}
+#sunny .icon.i3{
+    left: 42vw;
+    bottom: 16.43396vw;
+    width: 1.56918vw;
+    height: 1.56918vw;
+    transform: rotate(20.42deg);
 }

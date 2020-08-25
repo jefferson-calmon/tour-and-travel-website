@@ -7,11 +7,13 @@ import iconMore from '../../assets/moreIcon.svg';
 import iconCircle from '../../assets/circleIcon.svg';
 import iconArrowRight from '../../assets/arrowRight.svg';
 import imageDestination1 from '../../assets/destination1.png';
+import imageSunny from '../../assets/sunny.svg';
 
 import ButtonLink from '../../components/Button';
 
 
 import './styles.css';
+import BoxDestination from '../../components/BoxDestination';
 
 const Landing = () => {
     return(
@@ -106,43 +108,58 @@ const Landing = () => {
                     </header>
 
                     <div className="destinations">
-                        <div className="destination">
-                            <img src={imageDestination1} alt="Raja Ampat"/>
+                        <BoxDestination 
+                            image={imageDestination1}
+                            city="Raja Ampat"
+                            country="Indonesia"
+                        />
 
-                            <div>
-                                <h3>Raja Ampat</h3>
-                                <p>Indonesia</p>
-                            </div>
-                        </div>
+                        <BoxDestination 
+                            image={imageDestination1}
+                            city="Raja Ampat"
+                            country="Indonesia"
+                        />
 
-                        <div className="destination">
-                            <img src={imageDestination1} alt="Raja Ampat"/>
+                        <BoxDestination 
+                            image={imageDestination1}
+                            city="Raja Ampat"
+                            country="Indonesia"
+                        />
 
-                            <div>
-                                <h3>Raja Ampat</h3>
-                                <p>Indonesia</p>
-                            </div>
-                        </div>
+                        <BoxDestination 
+                            image={imageDestination1}
+                            city="Raja Ampat"
+                            country="Indonesia"
+                        />
+                    </div>
 
-                        <div className="destination">
-                            <img src={imageDestination1} alt="Raja Ampat"/>
+                    
+                    <img src={iconCircle} className="icon i1" alt="icon circle"/>
+                    <img src={iconMore} className="icon i2" alt="icon more"/>
+                    <img src={iconCircle} className="icon i3" alt="icon circle"/>
+                </div>
+            </section>
 
-                            <div>
-                                <h3>Raja Ampat</h3>
-                                <p>Indonesia</p>
-                            </div>
-                        </div>
+            <section id="sunny">
+                <div className="content">
+                    <div className="textSunny">
+                        <h2>Guides by Thousand Sunny</h2>
 
-                        <div className="destination">
-                            <img src={imageDestination1} alt="Raja Ampat"/>
+                        <p>
+                        Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.
+                        </p>
 
-                            <div>
-                                <h3>Raja Ampat</h3>
-                                <p>Indonesia</p>
-                            </div>
-                        </div>
+                        <ButtonLink link="#download" text="Download" size={1.24805} />
+                    </div>
+
+                    <div className="imageSunny">
+                        <img src={imageSunny} alt="Vetor do sunny"/>
                     </div>
                 </div>
+                
+                <img src={iconMore} className="icon i1" alt="icon more"/>
+                <img src={iconCircle} className="icon i2" alt="icon circle"/>
+                <img src={iconMore} className="icon i3" alt="icon more"/>
             </section>
         </>
     );
